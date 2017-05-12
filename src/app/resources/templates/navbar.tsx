@@ -25,12 +25,6 @@ export const Navbar = translate()(({ routes, t }) => (
           </li>
         ))}
       </ul>
-
-      <ul className='nav navbar-nav navbar-right'>
-        <li className='loader'>
-          <i className='fa fa-spinner fa-spin fa-2x'></i>
-        </li>
-      </ul>
     </div>
   </nav>
 ));

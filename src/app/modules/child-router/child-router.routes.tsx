@@ -29,13 +29,6 @@ export class ChildRouterRoutes extends React.Component<any, any> {
       path: '/child-router/users',
       exact: false,
       component: Users
-    },
-    {
-      name: 'child-router',
-      title: 'Child Router',
-      path: '/child-router/child-router',
-      exact: false,
-      component: ChildRouter
     }
   ];
 
