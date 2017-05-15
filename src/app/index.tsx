@@ -4,10 +4,16 @@
 import './../scss/main.scss';
 
 /**
- * Import polyfills
+ * Import config
  */
-import 'reflect-metadata';
-import 'whatwg-fetch';
+import { appConfigService } from './services/app-config.service';
+
+/**
+ * Import logger
+ */
+import * as Logger from 'js-logger';
+Logger.useDefaults();
+Logger.setLevel(Logger[appConfigService.getConfig().LOG_LEVEL]);
 
 /**
  * Import react libraries
@@ -25,7 +31,6 @@ import { Provider } from 'react-redux';
  */
 import { App } from './app';
 import { i18nInstance } from './utils/i18n';
-import { container } from './utils/ioc.config';
 import configureStore from './redux/configure.store';
 
 /**

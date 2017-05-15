@@ -1,5 +1,3 @@
-import { injectable } from 'inversify';
-
 import { platforms } from './../models/platforms';
 
 /**
@@ -17,8 +15,7 @@ export interface IAppConfigEnv {
   LOG_LEVEL: string;
 }
 
-@injectable()
-export class AppConfigService {
+class AppConfigService {
   private name: string;
   private version: string;
   private env: string;
@@ -40,3 +37,5 @@ export class AppConfigService {
   public platformIsBrowser(): boolean { return this.platform === platforms.BROWSER; }
   public platformIsMobile(): boolean { return this.platform === platforms.MOBILE; }
 }
+
+export const appConfigService = new AppConfigService();
