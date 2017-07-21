@@ -1,6 +1,6 @@
-[![Build Status](https://api.travis-ci.org/w3tecch/aurelia-typescript-boilerplate.svg?branch=master)](https://travis-ci.org/w3tecch/aurelia-typescript-boilerplate)
-[![Dependency Status](https://david-dm.org/w3tecch/aurelia-typescript-boilerplate.svg)](https://david-dm.org/w3tecch/aurelia-typescript-boilerplate)
-[![devDependency Status](https://david-dm.org/w3tecch/aurelia-typescript-boilerplate/dev-status.svg)](https://david-dm.org/w3tecch/aurelia-typescript-boilerplate#info=devDependencies)
+[![Build Status](https://api.travis-ci.org/w3tecch/react-typescript-boilerplate.svg?branch=master)](https://travis-ci.org/w3tecch/react-typescript-boilerplate)
+[![Dependency Status](https://david-dm.org/w3tecch/react-typescript-boilerplate.svg)](https://david-dm.org/w3tecch/react-typescript-boilerplate)
+[![devDependency Status](https://david-dm.org/w3tecch/react-typescript-boilerplate/dev-status.svg)](https://david-dm.org/w3tecch/react-typescript-boilerplate#info=devDependencies)
 
 ## Getting started
 
@@ -71,7 +71,7 @@ You can choose one or two and remove the other, or even use all of them for diff
 
 Jest is a powerful unit testing runner and framework.
 It runs really fast, however the tests are run under NodeJS, not the browser.
-This means there might be some cases where something you'd expect works in reality, but fails in a test. One of those things will be SVG, which isn't supported under NodeJS. However, the framework is perfect for doing unit tests of pure functions, and works pretty well in combination with `aurelia-testing`.
+This means there might be some cases where something you'd expect works in reality, but fails in a test. One of those things will be SVG, which isn't supported under NodeJS. However, the framework is perfect for doing unit tests of pure functions, and works pretty well in combination with `react-testing`.
 
 To create new Jest tests, create files with the extension `.test.ts`, either in the `src` directory or in the `test/jest-unit` directory.
 

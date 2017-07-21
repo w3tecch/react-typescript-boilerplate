@@ -157,7 +157,7 @@ module.exports = ({ production, server, extractCss, coverage, platform, config }
         name: ['common']
       })),
       ...when(production, new CopyWebpackPlugin([
-        { from: 'static/favicon.ico', to: 'favicon.ico' }
+        { from: 'assets/images/favicon.ico', to: 'favicon.ico' }
       ])),
       ...when(production, new BannerPlugin(
         ' @name           ' + pkg.title + '\n' +
